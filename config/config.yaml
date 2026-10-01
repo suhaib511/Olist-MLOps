@@ -1,0 +1,17 @@
+models:
+  path: "models"
+  model_file: "final_model.joblib"
+  imputer_file: "imputer.pkl"
+  feature_list_file: "feature_list.pkl"
+
+data:
+  path: "data"
+
+target:
+   name: "label"
+
+logging:
+  level: "INFO"
+
+model:
+  version: "local"
