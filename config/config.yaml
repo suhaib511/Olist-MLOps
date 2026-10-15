@@ -13,5 +13,8 @@ target:
 logging:
   level: "INFO"
 
-model:
-  version: "local"
+
+mlflow:
+  tracking_uri: http://127.0.0.1:5000
+  registered_model_name: OlistLatePrediction
+  model_alias: champion

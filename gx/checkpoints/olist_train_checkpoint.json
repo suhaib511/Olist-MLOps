@@ -1,0 +1,12 @@
+{
+  "actions": [],
+  "id": "90961872-58a6-43e1-a94b-312509995c03",
+  "name": "olist_train_checkpoint",
+  "result_format": "SUMMARY",
+  "validation_definitions": [
+    {
+      "id": "93b2d610-58ec-40a2-b47a-2d4adbe3fabb",
+      "name": "olist_train_validation"
+    }
+  ]
+}

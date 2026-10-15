@@ -5,3 +5,7 @@ __pycache__/
 *.pyc
 .env
 /models
+client_secret_*.json
+
+mlflow.db
+mlruns/

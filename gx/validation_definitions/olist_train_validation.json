@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "38cffff8-586f-4d81-bda1-e470ab828972",
+      "name": "train_features"
+    },
+    "batch_definition": {
+      "id": "3716df6f-2d66-49dc-b97d-f58b7432e5f9",
+      "name": "train_features_batch"
+    },
+    "datasource": {
+      "id": "a1291973-d68e-4aa3-b975-2361b769a651",
+      "name": "olist_pandas"
+    }
+  },
+  "id": "93b2d610-58ec-40a2-b47a-2d4adbe3fabb",
+  "name": "olist_train_validation",
+  "suite": {
+    "id": "3f5dfcc6-38de-4385-a4cb-c9192141bf06",
+    "name": "olist_train_expectations"
+  }
+}

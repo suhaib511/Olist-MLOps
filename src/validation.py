@@ -27,10 +27,16 @@ def validate_input(data: dict) -> None:
             f"Missing required features: {missing_features}"
         )
 
+    imputable_features = [
+        "approval_delay_hours",
+        "count_sequential",
+        "sum_pyament_value",
+    ]
+
     for feature in required_features:
         value = data[feature]
 
-        if value is None:
+        if value is None and feature not in imputable_features:
             raise ValueError(
                 f"Feature '{feature}' cannot be None."
             )

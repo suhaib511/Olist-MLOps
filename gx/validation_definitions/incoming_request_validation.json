@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "d6e615ab-37c4-4be1-9fe3-f22513a176e4",
+      "name": "incoming_request"
+    },
+    "batch_definition": {
+      "id": "35dc05fe-adb6-4093-8fb0-9fcd1e12f947",
+      "name": "incoming_request_batch"
+    },
+    "datasource": {
+      "id": "a1291973-d68e-4aa3-b975-2361b769a651",
+      "name": "olist_pandas"
+    }
+  },
+  "id": "ff48d59a-accb-4112-a4ff-175851a341e9",
+  "name": "incoming_request_validation",
+  "suite": {
+    "id": "3f5dfcc6-38de-4385-a4cb-c9192141bf06",
+    "name": "olist_train_expectations"
+  }
+}
