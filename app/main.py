@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException
 import yaml
 from pathlib import Path
-from src.pipeline import run_prediction
+from src.pipeline import run_prediction, get_monitoring_metrics
 from app.schemas import (
     PredictionRequest,
     PredictionResponse,
@@ -9,6 +9,7 @@ from app.schemas import (
 )
 
 app = FastAPI()
+from functools import lru_cache
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 CONFIG_PATH = PROJECT_ROOT / "config" / "config.yaml"
@@ -28,6 +29,10 @@ def model_info():
         "model_name": config["mlflow"]["registered_model_name"],
         "model_version": config["mlflow"]["model_alias"],
     }
+
+@app.get("/monitoring")
+def monitoring():
+    return get_monitoring_metrics()
 
 
 

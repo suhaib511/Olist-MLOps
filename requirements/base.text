@@ -1,5 +1,10 @@
 joblib==1.5.3
 pandas==2.3.3
 scikit-learn==1.8.0
-xgboost==3.4.1
+xgboost-cpu==3.4.1
 PyYAML==6.0.3
+fastapi==0.128.0
+uvicorn==0.54.0
+mlflow==3.16.1
+great-expectations==1.23.2
+boto3==1.43.118
