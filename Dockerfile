@@ -17,8 +17,6 @@ RUN --mount=type=cache,target=/root/.cache/pip python -m pip install --timeout 1
 COPY app/ ./app/
 COPY src/ ./src/
 COPY config/ ./config/
-COPY models/ ./models/
-COPY mlruns/ ./mlruns/
 COPY gx/ ./gx/
 
 RUN mkdir -p /app/logs
