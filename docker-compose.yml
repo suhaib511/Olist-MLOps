@@ -18,6 +18,8 @@ services:
       postgres:
         condition: service_healthy
     restart: unless-stopped
+    volumes:
+      - ./logs:/app/logs
 
   postgres:
     image: postgres:16
