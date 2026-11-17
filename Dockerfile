@@ -17,6 +17,7 @@ RUN --mount=type=cache,target=/root/.cache/pip python -m pip install --timeout 1
 COPY app/ ./app/
 COPY src/ ./src/
 COPY models/feature_list.pkl ./models/feature_list.pkl
+COPY models/imputer.pkl ./models/imputer.pkl
 COPY config/ ./config/
 COPY gx/ ./gx/
 
