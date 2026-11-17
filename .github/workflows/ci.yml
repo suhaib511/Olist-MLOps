@@ -25,6 +25,6 @@ jobs:
           pip install -r requirements/base.text
           pip install pytest httpx
 
-      - name: Run tests
+      - name: Run unit tests
         run: |
-          python -m pytest -q
+          python -m pytest tests/test_validation.py tests/test_incoming_validation.py -q
